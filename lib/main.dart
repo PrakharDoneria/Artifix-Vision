@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoApp(
-      title: 'Gemini Vision App',
+      title: 'Artifix Vision',
       theme: CupertinoThemeData(
         brightness: Brightness.dark,
       ),
@@ -100,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
       var backendResponse = await http.get(
         Uri.parse(
-            'https://gemini-vision.vercel.app/vision?url=$imageUrl&prompt=$_prompt'),
+            'https://gemini-vision-five.vercel.app/vision?url=$imageUrl&prompt=$_prompt'),
       );
 
       if (backendResponse.statusCode != 200) {
